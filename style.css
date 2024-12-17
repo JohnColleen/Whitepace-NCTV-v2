@@ -157,7 +157,15 @@ image {
 }
 
 .baby .container {
+  position: relative;
   display: flex;
+  overflow: hidden;
+}
+
+.baby .projectmanagement-png {
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .baby .baby-content {
@@ -354,11 +362,26 @@ image {
   max-height: 574px;
   top: 5232.09px;
   padding: 140px 220px;
+  overflow: hidden;
   background: #043873;
+  /* background: url(image/BACKGROUND-try-taskey.png) #043873 no-repeat;
+  background-position-y: -150px; */
+}
+
+.taskey-img {
+  position: absolute;
+  z-index: 1000;
+  top: 4760px;
 }
 
 .taskey .content-taskey {
+  display: flex;
   align-items: center;
+}
+
+.taskey .container-sm {
+  display: flex;
+  z-index: 1000;
 }
 
 .taskey .container-sm .text {
@@ -418,13 +441,16 @@ image {
 /* Apps */
 
 .app {
-  background: #043873;
+  /* background: #043873; */
   max-width: 1, 920px;
   max-height: 750.8px;
   top: 7005.22px;
   padding: 140px 220px;
   gap: 100px;
   color: #fff;
+  background: url(image/hero-element.png) #043873 no-repeat center;
+  background-size: cover;
+  /* background-position-y: -150px; */
 }
 
 .app .app-content {
